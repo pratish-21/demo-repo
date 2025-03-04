@@ -1,0 +1,13 @@
+{
+    "student" : "newbie",
+    "age" : 10.4,
+    "height" : 5,
+    "hobbies" : ["cricket","football","badminton"],
+    "gender" : true,
+    "salary" : null,
+    "phoneno" : {
+        "home" : 999999999,
+        "office" : 33333333,
+        "email" : "qwerty@gmail.com"
+    }
+}
