@@ -3,7 +3,7 @@
     "age" : 10.4,
     "height" : 5,
     "hobbies" : ["cricket","football","badminton"],
-    "gender" : true,
+    "gender" : ["male",true],
     "salary" : null,
     "phoneno" : {
         "home" : 999999999,
