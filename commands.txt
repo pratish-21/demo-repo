@@ -1,0 +1,185 @@
+#json
+
+{
+    "name" : "student",
+    "age" : 10,
+    "height" : 5.4,
+    "salary" : null,
+    "status" : true,
+    "hobbies" : ["chess" , "cricket" , "football"],
+    "contact" : {
+        "email" : "unknown@mail.com",
+        "phoneno" : 999999999
+    }
+}
+
+#git
+
+git status
+git branch
+git remote -v
+git add <branch name>
+git add .
+git commit -m "message1" "message2"
+git commit -am "message"
+git push origin main
+git push -u origin main
+git log
+git branch
+git checkout
+git checkout -b newbranchname
+git branch -d branchname
+git reset
+git reset HEAD~1
+git reset commitid
+git reset --hard commitid
+git clone <url or ssh>
+git merge branchname
+git diff branchname
+git pull origin url
+git stash
+git restore
+git stash pop
+git stash clear
+
+#yaml
+
+string: "pratish"
+string: 'pratish'
+string: pratish
+
+string: !!str "pratish"
+string: !!str 'pratish'
+string: !!str pratish
+
+integer: 10
+pinteger: +11
+ninteger: -12
+binteger: 0101
+ointeger: 4567
+hinteger: 0x45
+
+integer: !!int 10
+pinteger: !!int +11
+ninteger: !!int -12
+binteger: !!int 0101
+ointeger: !!int 4567
+hinteger: !!int 0x45
+
+float: 4.5
+float1: .inf
+float2: .nan
+
+float: !!float 4.5
+float1: !!float .inf
+float2: !!float .nan
+
+exp: 4E5
+
+bool: yes
+bool: !!isbool true
+
+n: null
+n: !!null null
+
+date: 2025-03-19T12:00:00:000Z
+date: !!timestamp 2025-03-19T12:00:00:000Z
+
+student: 
+ - newbranchname
+ - oldbranch
+
+student: !!seq
+ - newbranchname
+ - oldbranch
+
+student: [newbranchname , oldbranch]
+
+-
+ - name
+ - age
+ - rollno
+-
+ - height
+ - weight
+
+sparse:
+ - 
+ - seq1
+ - 
+ - seq2
+
+sparse: !!seq
+ - 
+ - seq1
+ - 
+ - seq2
+
+pair: 
+ - job: student
+ - job: engineer
+
+pair: !!pairs
+ - job: student
+ - job: engineer
+
+name: 
+? nam
+? ag
+
+name: !!set
+? nam
+? ag
+
+name: 
+ height: 1.2
+ age: 6
+ job: market
+
+name: !!map
+ height: 1.2
+ age: 6
+ job: market
+
+name :
+ - p1: 
+   - name: person
+     age: 23
+     salary: 54_000
+ - p2: 
+   - name: person2
+     age: 34
+     salary: 25,000
+
+name : !!omap
+ - p1: 
+   - name: person
+     age: 23
+     salary: 54_000
+ - p2: 
+   - name: person2
+     age: 34
+     salary: 25,000
+
+like: &anchor
+ name: person1
+ age: 25
+
+person: 
+ test: 123
+ <<: *anchor
+
+bio: |
+ multi 
+ line
+ comment
+
+message: >
+ single
+ line
+ comment
+
+ 
+
+
+
