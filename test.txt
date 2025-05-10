@@ -1,0 +1,66 @@
+{
+    "student" : "bot",
+    "age" : 25,
+    "height" : 5.4,
+    "gender" : "male",
+    "martial status" : false,
+    "phone no" :[9898999989,90900000000],
+    "contact" : {
+        "email" : null,
+        "home" : null
+    }
+
+}
+
+-----------------------------
+
+name: pratish
+name: "pratish"
+name: 'pratish'
+
+int: 10
+int: +11
+int: -12
+bin: 0101
+oint: 0456
+hint: 0x01
+
+fl: 2.3
+fl: .inf
+fl: .nan
+
+bio: |
+multi
+line
+comment
+
+message: >
+single
+line 
+comment
+
+name: ['mango' , orange']
+name: 
+ - mango
+ - orange
+
+null: !!null null
+
+bool: !!isbool true
+
+date: 2025-05-10T12:00:000Z
+date: !!timestamp 2025-05-10T12:00:000Z
+
+student: 
+ - name
+ - age
+ - marks
+
+student: !!seq
+ - name
+ - age
+ - marks
+
+pair: !!pairs
+
+
