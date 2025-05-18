@@ -1,0 +1,12 @@
+{
+    "name":"new employee",
+    "age" : 26,
+    "height" : 5.5,
+    "hobbies":["cricket","shuttle"],
+    "conatct":{
+        "email":"work@gmail.com",
+        "cell":909009090
+    },
+    "martial status":false,
+    "gender":null
+}
