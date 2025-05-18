@@ -1,0 +1,170 @@
+#string
+name: "jennifer"
+name1: 'jeniffer'
+name2: jeniffer
+
+name: !!str "jennifer"
+name1: !!str 'jeniffer'
+name2: !!str jeniffer
+
+#int
+n: 23
+n1: -45
+n2: 0101
+n3: 067
+n4: 0x45
+
+n: !!int 23
+n1: !!int -45
+n2: !!int 0101
+n3: !!int 067
+n4: !!int 0x45
+n5: !!int +54_000
+
+#float
+f: 4.5
+f1: .inf
+f2: .nan
+
+f: !!float 4.5
+f1: !!float .inf
+f2: !!float .nan
+
+#multi line comment
+bio: |
+ this is
+ a multi
+ line
+ comment
+
+bio: !!str |
+ this is
+ a multi
+ line
+ comment
+
+#sinle line comment in multi line
+message: >
+ this 
+ is a
+ single line 
+ comment
+ in multi line
+
+message: !!str >
+ this 
+ is a
+ single line 
+ comment
+ in multi line
+
+#date
+date: 2025-05-16T12:00:000Z
+date: !!timestamp 2025-05-16
+
+#null
+n: null
+n: !!null null
+
+#bool
+bool: false
+bool: !!bool true
+
+#sequence
+array: 
+ - apple
+ - bananna
+ - grapes
+
+array: !!seq
+ - apple
+ - bananna
+ - grapes
+
+#sparse seq
+array: 
+ - 
+ - name
+ - 
+ - age
+ - message
+
+array: !!seq
+ - 
+ - name
+ - 
+ - age
+ - message
+ - null
+
+#exponent
+exp: 3E45
+
+#pairs
+pair: 
+ - job: student
+ - job: student
+
+pair: !!pairs
+ - job: student
+ - job: student
+
+#maps
+na: p
+name: 
+ job: int
+ file: false
+
+ name: !!map
+  job: int
+  file: false
+
+ #set
+name: 
+? age
+? ports
+? terminal
+
+name: !!set
+? age
+? ports
+? terminal
+
+
+#dictionary
+name: 
+ - p1: student1
+   name: joe
+   age: 23
+   college: Anu 
+ - p2: student2
+   name: joy
+   age: 24
+   college: ANU
+
+name: !!omap
+ - p1: 
+   name: joe
+   age: 23
+   college: ANU 
+ - p2: 
+    name: joy
+    age: 24
+    college: ANU
+
+#anchor
+like: &anchor
+ name: bruce
+ job: batman
+ prefernce: style
+
+p2: 
+ test: na
+ <<: *anchor
+
+
+
+
+
+
+
