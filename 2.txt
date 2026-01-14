@@ -1,0 +1,36 @@
+{
+    "name" : "Batman"
+    "age" : 45,
+    "height" : 4.3,
+    "martial status" : false,
+    "wife" : null,
+    "hobbies" : ["cricket","football","hockey"],
+    "contact" : {
+        "phone" : 1234567890,
+        "mail" : "abc@def.com",
+        "house" : null
+    }
+}
+
+git status
+git add <file name>
+git add .
+git branch <new branch name>
+git commit -m "message" "message2"
+git commit -am "message"
+git checkout
+git branch
+git checkout -b <new branch name>
+git branch -d <branch name>
+git merge <branch name>
+git diff <branch name>
+git push origin main
+git push -u origin main
+git pull origin main
+git remote -v
+git clone 
+git rebase -i commit2
+git log
+git reset
+git reset commitid
+git reset --hard commit id
